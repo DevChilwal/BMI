@@ -72,9 +72,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 return true
             }
             R.id.about_bmi -> {
-                val intent = Intent(
-                    Intent.ACTION_VIEW,
-                    Uri.parse("https://en.wikipedia.org/wiki/Body_mass_index")
+                val intent = Intent(this,what_is_bmi::class.java
+//                    Intent.ACTION_VIEW,
+//                    Uri.parse("www.google.com")
                 )
                 startActivity(intent)
 
@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.email -> {
                 val intent = Intent(Intent.ACTION_SENDTO).apply {
                     data = Uri.parse("mailto:") // only email apps should handle this
-                    putExtra(Intent.EXTRA_EMAIL, arrayOf("chhilwald3@gmail.com"))
+                    putExtra(Intent.EXTRA_EMAIL, arrayOf("chilwald3@gmail.com"))
                     putExtra(Intent.EXTRA_SUBJECT, "  Hey  ")
                 }
                 startActivity(intent)
