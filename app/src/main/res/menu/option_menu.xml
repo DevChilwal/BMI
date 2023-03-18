@@ -8,6 +8,7 @@
         android:id="@+id/about_bmi"
         android:title="@string/what_is_bmi"
         />
+
     <item
         android:id="@+id/bmi_chart"
         android:title="@string/bmi_chart"
@@ -27,7 +28,13 @@
 
                 />
         </menu>
+
     </item>
+
+    <item
+        android:id="@+id/ratingbar"
+        android:title="Rate Us"
+        />
     <item
         android:id="@+id/exit_app"
         android:title="@string/exit"

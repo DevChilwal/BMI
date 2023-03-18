@@ -11,5 +11,6 @@
     <string name="dial">Dial</string>
     <string name="email">Email</string>
     <string name="exit">Exit</string>
+    <string name="submit">SUBMIT</string>
 
 </resources>

@@ -92,6 +92,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 startActivity(intent)
             }
+            R.id.ratingbar ->{
+                val intent = Intent(this,ratingbar::class.java)
+                startActivity(intent)
+            }
         }
             return super.onOptionsItemSelected(item)
         }
