@@ -1,5 +1,6 @@
 package com.example.bmi
 
+import android.app.Dialog
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.MenuCompat
 import com.example.bmi.databinding.ActivityMainBinding
+import com.example.bmi.databinding.ActivityRatingbarBinding
 import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -92,10 +94,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 startActivity(intent)
             }
+//            R.id.ratingbar ->{
+//                val intent = Intent(this,ratingbar::class.java)
+//                startActivity(intent)
+//            }
             R.id.ratingbar ->{
-                val intent = Intent(this,ratingbar::class.java)
-                startActivity(intent)
+                val ratingActivity = ActivityRatingbarBinding.inflate(layoutInflater)
+                val dialog = Dialog(this)
+                dialog.setContentView(ratingActivity.root)
+                dialog.setCancelable(true)
+                dialog.show()
             }
+
+
+
+
+
+
         }
             return super.onOptionsItemSelected(item)
         }
