@@ -83,13 +83,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.dial -> {
                 val intent = Intent(Intent.ACTION_DIAL)
-                intent.data = Uri.parse("tel:9917576899")
+                intent.data = Uri.parse("tel:1010101010")
                 startActivity(intent)
             }
             R.id.email -> {
                 val intent = Intent(Intent.ACTION_SENDTO).apply {
                     data = Uri.parse("mailto:") // only email apps should handle this
-                    putExtra(Intent.EXTRA_EMAIL, arrayOf("chilwald3@gmail.com"))
+                    putExtra(Intent.EXTRA_EMAIL, arrayOf("abc@gmail.com"))
                     putExtra(Intent.EXTRA_SUBJECT, "  Hey  ")
                 }
                 startActivity(intent)

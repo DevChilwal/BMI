@@ -15,6 +15,9 @@
         android:theme="@style/Theme.BMI"
         tools:targetApi="31">
         <activity
+            android:name=".viewmodelActivity"
+            android:exported="false" />
+        <activity
             android:name=".ratingbar"
             android:exported="false" />
         <activity
