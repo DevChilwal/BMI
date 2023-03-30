@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <variable
+            name="click"
+            type="com.example.bmi.CourotinDemoActivity" />
+        <variable
+            name="download"
+            type="com.example.bmi.CourotinDemoActivity" />
 
     </data>
 

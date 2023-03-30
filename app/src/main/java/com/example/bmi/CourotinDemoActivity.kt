@@ -30,11 +30,11 @@ class CourotinDemoActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             R.id.btn_download -> {
-                downloading()
+                Downloading()
             }
         }
     }
-        private fun downloading()
+        private fun Downloading()
         {
             for (i in 1..1000)
             {
