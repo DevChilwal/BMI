@@ -7,7 +7,7 @@
 
         <variable
             name="myviewmodel"
-            type="com.example.bmi." />
+            type="com.example.bmi.ViewModelBmi" />
 
     </data>
 
