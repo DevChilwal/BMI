@@ -4,12 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
-            name="height"
-            type="com.example.bmi.MainActivity" />
-        <variable
-            name=""
-            type="" />
+            name="myviewmodel"
+            type="com.example.bmi." />
 
     </data>
 
