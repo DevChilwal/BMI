@@ -9,7 +9,7 @@ class ViewModelBmi() : ViewModel()
 {
     var count:MutableLiveData<Double> = MutableLiveData()
     var bmi: LiveData<Double> = count
-    var status: MutableLiveData<String> = MutableLiveData()
+    var statusofhealth : MutableLiveData<String> = MutableLiveData()
     var baseObservable : Observable = Observable()
     var errormsg: MutableLiveData<String> = MutableLiveData()
 
@@ -36,22 +36,22 @@ class ViewModelBmi() : ViewModel()
 
             if (BMI < 18.5)
             {
-                status.value = " Your BMI is :- $BMI \n You are Under Weight"
+                statusofhealth.value = " Your BMI is :- $BMI \n You are Under Weight"
                 count.value = x
             }
             else if (BMI >= 18.5 && BMI < 24.9)
             {
-                status.value = " Your BMI is :- $BMI \n You are Healthy"
+                statusofhealth.value = " Your BMI is :- $BMI \n You are Healthy"
                 count.value = x
             }
             else if (BMI >= 24.9 && BMI < 30)
             {
-                status.value= " Your BMI is :- $BMI \n Your are Over Weight"
+                statusofhealth.value= " Your BMI is :- $BMI \n Your are Over Weight"
                 count.value = x
             }
             else
             {
-                status.value=" Your BMI is :- $BMI \n You Are Suffering from Obesity"
+                statusofhealth.value=" Your BMI is :- $BMI \n You Are Suffering from Obesity"
                 count.value = x
             }
 

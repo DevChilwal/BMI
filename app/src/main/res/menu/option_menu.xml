@@ -2,41 +2,32 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/about_dev"
-        android:title="About Developer"
-        />
+        android:title="About Developer" />
     <item
         android:id="@+id/about_bmi"
-        android:title="@string/what_is_bmi"
-        />
+        android:title="@string/what_is_bmi" />
 
     <item
         android:id="@+id/bmi_chart"
-        android:title="@string/bmi_chart"
-        />
+        android:title="@string/bmi_chart" />
     <item
         android:id="@+id/contact_us"
-        android:title="@string/contacts_us"
-        >
+        android:title="@string/contacts_us">
         <menu>
             <item
                 android:id="@+id/dial"
-                android:title="@string/dial"
-                />
+                android:title="@string/dial" />
             <item
                 android:id="@+id/email"
-                android:title="@string/email"
-
-                />
+                android:title="@string/email" />
         </menu>
 
     </item>
 
     <item
         android:id="@+id/ratingbar"
-        android:title="Rate Us"
-        />
+        android:title="Rate Us" />
     <item
         android:id="@+id/exit_app"
-        android:title="@string/exit"
-        />
+        android:title="@string/exit" />
 </menu>

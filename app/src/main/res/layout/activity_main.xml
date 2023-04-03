@@ -6,8 +6,8 @@
     <data>
 
         <variable
-            name="myviewmodel"
-            type="com.example.bmi.ViewModelBmi" />
+            name="ViewModel"
+            type="com.example.bmi."/>
 
     </data>
 

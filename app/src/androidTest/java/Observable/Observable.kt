@@ -12,7 +12,7 @@ class Observable : BaseObservable() {
         set(value)
         {
             field = value
-            notifyPropertyChanged(BR.)
+            notifyPropertyChanged(BR.height)
         }
 
     @get:Bindable
